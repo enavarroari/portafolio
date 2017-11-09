@@ -28,7 +28,7 @@ export class InformacionService {
   public carga_sobrenosotros (  ) {
     this.http.get("https://portafolioweb-f4219.firebaseio.com/equipo.json")
       .subscribe( data => {
-        console.log(data.json());
+        //console.log(data.json());
         this.cargada_sn = true;
         this.equipo = data.json();
       })
